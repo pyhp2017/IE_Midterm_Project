@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Github - |Midterm Project|</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- COLUMN FOR INFORMATIONS -->
+            <div class="col">
+                <div class="info">
+                    <div class="inline">
+                        <img id="github_avatar" class="avatar" src="assets/images/avatar.jpg">
+                        <div id="nameBox">
+                            <h2 id="github_fullname">Full Name</h2>
+                            <h4>Username: <a target="_blank" href="#" id="github_url">EMPTY</a></h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="inline">
+                        <table class="rwd-table">
+                            <tbody>
+                              <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Type
+                                </td>
+                                <td id="github_type" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Company
+                                </td>
+                                <td id="github_company" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Blog
+                                </td>
+                                <td id="github_blog" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Location
+                                </td>
+                                <td id="github_location" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Email
+                                </td>
+                                <td id="github_email" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  Hireable
+                                </td>
+                                <td id="github_hireable" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  Twitter Username
+                                </td>
+                                <td id="github_twitter" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  Public Repos
+                                </td>
+                                <td id="github_public_repos" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                 Public Gists
+                                </td>
+                                <td id="github_public_gists" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                 Followers
+                                </td>
+                                <td id="github_followers" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  Following
+                                </td>
+                                <td id="github_following" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  Top Language
+                                </td>
+                                <td id="github_language" data-th="Supplier Name">
+                                  EMPTY
+                                </td>
+                              </tr>
+
+                            </tbody>
+                        </table>    
+                    </div>
+                    <div class="bio">
+                        <h5>Bio:</h5>
+                        <p id="github_bio">EMPTY</p>
+                    </div>
+                    <br>
+                    <div id="alert">
+                      <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                      <p id="error_message"></p>
+                    </div>
+                  </div>
+            </div>
+            <!-- COLUMN FOR LOGIN -->
+            <div class="col">
+                <div class="login">
+                    <h3>Please Enter username:</h3>
+                    <br>
+                    <input type="text" id="github_username" name="github_username" placeholder="Your github username..">
+                    <br>
+                    <label for="methods">Method: </label>
+                    <select id="methods">
+                        <option value="local">Local Storage</option>
+                        <option value="cookie">Cookie</option>
+                      </select>
+                                              
+                    <input type="submit" value="Submit" onclick="submit()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
